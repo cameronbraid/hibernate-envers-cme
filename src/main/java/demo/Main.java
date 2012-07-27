@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.action.spi.AfterTransactionCompletionProcess;
 import org.hibernate.action.spi.BeforeTransactionCompletionProcess;
@@ -28,7 +27,7 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-
+		
 		Configuration cfg = new Configuration();
 		cfg.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 		cfg.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
